@@ -27,7 +27,7 @@ const Header = () => {
     <header className="w-full bg-white border-b border-[#E0E0E0] sticky top-0 z-50">
       <div className="flex items-center justify-between h-[50px] px-4 md:px-12">
         <div className="flex items-center h-full">
-<a href="/" className="bg-[#1a1a1a] px-4 md:px-6 h-[50px] flex items-center justify-center md:-ml-12 min-w-[140px] md:min-w-[180px]">
+<a href="/" className="bg-[#1a1a1a] px-4 md:px-6 h-[51px] -mb-px flex items-center justify-center md:-ml-12 min-w-[140px] md:min-w-[180px]">
               <span className="text-white font-bold text-[18px] md:text-[24px] tracking-tight">JR-Interieur</span>
             </a>
         </div>
