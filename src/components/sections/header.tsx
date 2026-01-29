@@ -82,7 +82,7 @@ const Header = () => {
       </div>
 
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t border-[#E0E0E0] w-full left-0 shadow-lg">
+        <div className="lg:hidden fixed top-[50px] left-0 right-0 bg-white border-t border-[#E0E0E0] shadow-lg z-50 max-h-[calc(100vh-50px)] overflow-y-auto">
           <nav className="py-6 px-6">
             <ul className="space-y-1">
               <li>
