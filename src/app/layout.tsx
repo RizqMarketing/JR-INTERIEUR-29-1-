@@ -5,8 +5,8 @@ import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "JR-Interieur | Duurzaam Design voor Kantoor, Zorg & Onderwijs",
-  description: "JR-Interieur is uw partner voor duurzaam en circulair kantoor-, zorg- en onderwijsmeubilair. Ontdek onze uitgebreide collectie en projectoplossingen.",
+  title: "Circulaire kantoorinrichting voor overheid | JR-Interieur",
+  description: "Duurzame interieurinrichting voor overheid en publieke organisaties. Specialist in refurbished meubilair en herstofferen.",
 };
 
 export default function RootLayout({

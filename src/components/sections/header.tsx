@@ -1,35 +1,33 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Search, Globe, ChevronDown, ShoppingCart, Menu, X } from 'lucide-react';
+import { ChevronDown, Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const utilityLinks = [
-    { label: 'Over ons', href: '#' },
-    { label: 'Webshop', href: '/webshop' },
+    { label: 'Werkwijze', href: '/werkwijze' },
+    { label: 'Over ons', href: '/over-ons' },
     { label: 'Blog', href: '/blog' },
-    { label: 'Showroom', href: '#' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   const mainNavLinks = [
-    { label: 'Circulair interieur', hasDropdown: true },
-    { label: 'Onderwijs', hasDropdown: true },
-    { label: 'Zorg', hasDropdown: false },
-    { label: 'Kantoor', hasDropdown: true },
-    { label: 'Producten', hasDropdown: true },
-    { label: 'Projecten', hasDropdown: true },
-    { label: 'Diensten', hasDropdown: true },
+    { label: 'Oplossingen', href: '/oplossingen', hasDropdown: true },
+    { label: 'Kantoorinrichting', href: '/oplossingen/kantoorinrichting', hasDropdown: false },
+    { label: 'Refurbished meubilair', href: '/oplossingen/refurbished-meubilair', hasDropdown: false },
+    { label: 'Circulair inrichten', href: '/oplossingen/circulair-inrichten', hasDropdown: false },
+    { label: 'Duurzaam herstofferen', href: '/oplossingen/duurzaam-herstofferen', hasDropdown: false },
   ];
 
   return (
     <header className="w-full bg-white border-b border-[#E0E0E0] sticky top-0 z-50">
       <div className="flex items-center justify-between h-[50px] px-4 md:px-12">
         <div className="flex items-center h-full">
-<a href="/" className="bg-[#1a1a1a] px-4 md:px-6 h-[51px] -mb-px flex items-center justify-center md:-ml-12 min-w-[140px] md:min-w-[180px]">
-              <span className="text-white font-bold text-[18px] md:text-[24px] tracking-tight">JR-Interieur</span>
-            </a>
+          <a href="/" className="bg-[#1a1a1a] px-4 md:px-6 h-[51px] -mb-px flex items-center justify-center md:-ml-12 min-w-[140px] md:min-w-[180px]">
+            <span className="text-white font-bold text-[18px] md:text-[24px] tracking-tight">JR-INTERIEUR</span>
+          </a>
         </div>
 
         <div className="flex items-center gap-4 md:gap-6">
@@ -46,25 +44,13 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-2 md:gap-4">
-            <button className="relative p-2">
-              <ShoppingCart size={18} strokeWidth={1.5} className="text-[#000000]" />
-              <span className="absolute top-0 right-0 bg-[#f1f1f1] text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full border border-[#E0E0E0]">
-                0
-              </span>
-            </button>
-            <button className="p-2 hidden md:block">
-              <Search size={18} strokeWidth={1.5} className="text-[#000000]" />
-            </button>
-            <button className="p-2 hidden md:block">
-              <Globe size={18} strokeWidth={1.5} className="text-[#000000]" />
-            </button>
             <a
-              href="#contact"
+              href="/contact"
               className="hidden lg:flex items-center justify-center bg-[#6B8E7B] text-white text-[13px] font-bold px-5 h-[50px] md:-mr-12"
             >
               Contact
             </a>
-            <button 
+            <button
               className="p-2 lg:hidden"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
@@ -80,7 +66,7 @@ const Header = () => {
             {mainNavLinks.map((item) => (
               <li key={item.label} className="h-full flex items-center group relative">
                 <a
-                  href="#"
+                  href={item.href}
                   className="flex items-center gap-1.5 text-[14px] font-normal text-[#555555] hover:text-[#000000] transition-colors whitespace-nowrap"
                 >
                   {item.label}
@@ -102,7 +88,7 @@ const Header = () => {
               {mainNavLinks.map((item) => (
                 <li key={item.label}>
                   <a
-                    href="#"
+                    href={item.href}
                     className="flex items-center justify-between text-[14px] font-medium text-[#000000] py-2"
                   >
                     {item.label}
@@ -120,6 +106,11 @@ const Header = () => {
                     </a>
                   </li>
                 ))}
+                <li>
+                  <a href="/contact" className="text-[13px] font-bold text-[#6B8E7B]">
+                    Contact
+                  </a>
+                </li>
               </ul>
             </div>
           </nav>

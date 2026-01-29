@@ -11,72 +11,50 @@ const Footer = () => {
 
   const footerLinks = [
     {
-      title: "Onze oplossingen",
+      title: "Oplossingen",
       links: [
-        { label: "Collectie", href: "#" },
-        { label: "Diensten", href: "#" },
+        { label: "Kantoorinrichting", href: "/oplossingen/kantoorinrichting" },
+        { label: "Refurbished meubilair", href: "/oplossingen/refurbished-meubilair" },
+        { label: "Circulair inrichten", href: "/oplossingen/circulair-inrichten" },
+        { label: "Duurzaam herstofferen", href: "/oplossingen/duurzaam-herstofferen" },
       ],
       secondarySection: {
-        title: "Hybride werken",
+        title: "Werkwijze",
         links: [
-          { label: "Thuiswerken faciliteren", href: "#" },
-          { label: "De nieuwe werkplek", href: "#" },
+          { label: "Onze werkwijze", href: "/werkwijze" },
         ]
       }
     },
     {
-      title: "Circulair interieur",
+      title: "Over ons",
       links: [
-        { label: "Circulair interieurontwerp", href: "#" },
-        { label: "Refurbishment", href: "#" },
-        { label: "REVIVED", href: "#" },
+        { label: "Over JR-Interieur", href: "/over-ons" },
       ],
       secondarySection: {
-        title: "Over ons",
+        title: "Informatie",
         links: [
-          { label: "Over JR-Interieur", href: "#" },
-          { label: "Geschiedenis", href: "#" },
-          { label: "Vacatures", href: "#" },
-        ]
-      }
-    },
-    {
-      title: "Sectoren",
-      links: [
-        { label: "Onderwijs", href: "#" },
-        { label: "Zorg", href: "#" },
-        { label: "Kantoor", href: "#" },
-      ],
-      secondarySection: {
-        title: "Projecten",
-        links: [
-          { label: "Onderwijsprojecten", href: "#" },
-          { label: "Zorgprojecten", href: "#" },
-          { label: "Kantoorprojecten", href: "#" },
-          { label: "Circulaire projecten", href: "#" },
+          { label: "Blog", href: "/blog" },
         ]
       }
     },
     {
       title: "Contact",
       links: [
-        { label: "Neem contact op", href: "#" },
-        { label: "Serviceformulier", href: "#" },
+        { label: "Neem contact op", href: "/contact" },
       ],
       secondarySection: {
-        title: "Informatie",
+        title: "Adres",
         links: [
-          { label: "Showroom bezoeken", href: "#" },
-          { label: "Veelgestelde vragen", href: "#" },
+          { label: "Nederland", href: "#" },
         ]
       }
-    }
+    },
   ];
 
   return (
-    <footer id="contact" className="bg-[#F1F1F1] mt-auto font-sans">
+    <footer className="bg-[#F1F1F1] mt-auto font-sans">
       <div className="max-w-[1440px] mx-auto px-6 md:px-8 py-12 md:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-12">
           {footerLinks.map((column, idx) => (
             <div key={idx} className="flex flex-col gap-8 md:gap-10">
               <div className="flex flex-col gap-4">
@@ -118,7 +96,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             {/* Logo */}
             <a href="/" className="text-white font-bold text-[22px] md:text-[26px] tracking-tight">
-              JR-Interieur
+              JR-INTERIEUR
             </a>
 
             {/* Social Icons */}
@@ -139,11 +117,8 @@ const Footer = () => {
           {/* Divider */}
           <div className="border-t border-white/10 mt-8 pt-6">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-              <span className="text-[12px] text-white/50">© 2026 JR-Interieur. Alle rechten voorbehouden.</span>
+              <span className="text-[12px] text-white/50">&copy; 2026 JR-Interieur. Alle rechten voorbehouden.</span>
               <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
-                <a href="#" className="text-[12px] text-white/50 hover:text-white transition-colors">
-                  Vacatures
-                </a>
                 <a href="#" className="text-[12px] text-white/50 hover:text-white transition-colors">
                   Algemene voorwaarden
                 </a>
