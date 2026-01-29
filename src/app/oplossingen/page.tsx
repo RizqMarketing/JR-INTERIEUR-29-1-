@@ -116,7 +116,7 @@ export default function Oplossingen() {
 
         {/* Solutions Grid */}
         <section className="bg-[#F1F1F1] py-[60px] md:py-[120px]">
-          <div className="container mx-auto px-4 md:px-8 max-w-[1440px]">
+          <div className="container mx-auto px-6 md:px-8 max-w-[1440px]">
             <div className="mb-[40px] md:mb-[60px]">
               <h2 className="text-[28px] md:text-[40px] font-light leading-[1.1] uppercase tracking-[0.025em] text-black">
                 ONZE <span className="font-bold">DIENSTEN</span>

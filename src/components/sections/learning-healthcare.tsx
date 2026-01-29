@@ -4,7 +4,7 @@ import Image from 'next/image';
 const SolutionHighlights = () => {
   return (
     <section className="bg-white">
-      <div className="container mx-auto px-8 md:px-[120px]">
+      <div className="container mx-auto px-6 md:px-8 max-w-[1440px]">
         {/* KANTOORINRICHTING */}
         <div className="flex flex-col md:flex-row items-center py-[60px] md:py-[80px] gap-8 md:gap-16">
           <div className="w-full md:w-1/2 order-2 md:order-1">
@@ -16,10 +16,10 @@ const SolutionHighlights = () => {
             </p>
             <a
               href="/oplossingen/kantoorinrichting"
-              className="inline-flex items-center text-[14px] font-bold uppercase tracking-wider group transition-all duration-300 py-3 px-6 bg-[#f1f1f1] hover:bg-[#e0e0e0]"
+              className="group inline-flex items-center gap-3 text-[14px] font-bold uppercase tracking-wider text-black transition-all duration-300 hover:text-[#555555]"
             >
               Meer over kantoorinrichting
-              <span className="ml-4 text-xl transition-transform group-hover:translate-x-1">&rarr;</span>
+              <span className="transition-transform group-hover:translate-x-1">&rarr;</span>
             </a>
           </div>
           <div className="w-full md:w-1/2 order-1 md:order-2">
@@ -57,10 +57,10 @@ const SolutionHighlights = () => {
             </p>
             <a
               href="/oplossingen/duurzaam-herstofferen"
-              className="inline-flex items-center text-[14px] font-bold uppercase tracking-wider group transition-all duration-300 py-3 px-6 bg-[#f1f1f1] hover:bg-[#e0e0e0]"
+              className="group inline-flex items-center gap-3 text-[14px] font-bold uppercase tracking-wider text-black transition-all duration-300 hover:text-[#555555]"
             >
               Meer over herstofferen
-              <span className="ml-4 text-xl transition-transform group-hover:translate-x-1">&rarr;</span>
+              <span className="transition-transform group-hover:translate-x-1">&rarr;</span>
             </a>
           </div>
         </div>

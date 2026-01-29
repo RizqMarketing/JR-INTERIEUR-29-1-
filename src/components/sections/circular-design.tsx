@@ -25,10 +25,10 @@ const CircularDesign = () => {
             <div className="mt-10">
               <a
                 href="/oplossingen/refurbished-meubilair"
-                className="inline-flex items-center gap-4 bg-white px-6 py-4 text-[14px] font-bold uppercase tracking-wider text-black transition-all duration-300 hover:bg-black hover:text-white"
+                className="group inline-flex items-center gap-3 text-[14px] font-bold uppercase tracking-wider text-black transition-all duration-300 hover:text-[#555555]"
               >
                 Meer over refurbished meubilair
-                <ArrowRight className="h-4 w-6" strokeWidth={3} />
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.5} />
               </a>
             </div>
           </div>

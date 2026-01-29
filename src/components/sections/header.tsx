@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header className="w-full bg-white border-b border-[#E0E0E0] sticky top-0 z-50">
-      <div className="flex items-center justify-between h-[50px] px-4 md:px-12">
+      <div className="flex items-center justify-between h-[50px] pr-4 md:px-12">
         <div className="flex items-center h-full">
           <a href="/" className="bg-[#1a1a1a] px-4 md:px-6 h-[51px] -mb-px flex items-center justify-center md:-ml-12 min-w-[140px] md:min-w-[180px]">
             <span className="text-white font-bold text-[18px] md:text-[24px] tracking-tight">JR-INTERIEUR</span>
@@ -82,37 +82,40 @@ const Header = () => {
       </div>
 
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t border-[#E0E0E0] absolute w-full left-0 top-[50px] shadow-lg">
-          <nav className="py-4 px-6">
-            <ul className="space-y-4">
-              {mainNavLinks.map((item) => (
-                <li key={item.label}>
-                  <a
-                    href={item.href}
-                    className="flex items-center justify-between text-[14px] font-medium text-[#000000] py-2"
-                  >
-                    {item.label}
-                    {item.hasDropdown && <ChevronDown size={16} />}
-                  </a>
-                </li>
-              ))}
+        <div className="lg:hidden bg-white border-t border-[#E0E0E0] w-full left-0 shadow-lg">
+          <nav className="py-6 px-6">
+            <ul className="space-y-1">
+              <li>
+                <a href="/" className="block text-[15px] font-medium text-[#000000] py-3 border-b border-[#f1f1f1]">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/oplossingen" className="block text-[15px] font-medium text-[#000000] py-3 border-b border-[#f1f1f1]">
+                  Oplossingen
+                </a>
+              </li>
+              <li>
+                <a href="/werkwijze" className="block text-[15px] font-medium text-[#000000] py-3 border-b border-[#f1f1f1]">
+                  Werkwijze
+                </a>
+              </li>
+              <li>
+                <a href="/over-ons" className="block text-[15px] font-medium text-[#000000] py-3 border-b border-[#f1f1f1]">
+                  Over ons
+                </a>
+              </li>
+              <li>
+                <a href="/blog" className="block text-[15px] font-medium text-[#000000] py-3 border-b border-[#f1f1f1]">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="block text-[15px] font-bold text-[#6B8E7B] py-3">
+                  Contact
+                </a>
+              </li>
             </ul>
-            <div className="border-t border-[#E0E0E0] mt-4 pt-4">
-              <ul className="space-y-3">
-                {utilityLinks.map((link) => (
-                  <li key={link.label}>
-                    <a href={link.href} className="text-[13px] text-[#555555]">
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-                <li>
-                  <a href="/contact" className="text-[13px] font-bold text-[#6B8E7B]">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
           </nav>
         </div>
       )}
