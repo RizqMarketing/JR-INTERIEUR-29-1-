@@ -33,18 +33,16 @@ const CircularDesign = () => {
             </div>
           </div>
 
-          <div className="relative w-full lg:w-1/2 aspect-video flex items-center justify-center">
-            <div className="relative w-full h-full overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.12)] transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.18)] hover:-translate-y-1">
-              <Image
-                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1000&q=80"
-                alt="Refurbished circulair meubilair voor overheid"
-                fill
-                className="object-cover transition-transform duration-700 hover:scale-[1.02]"
-              />
+          <div className="relative w-full lg:w-1/2 aspect-video flex items-center justify-center overflow-hidden">
+            <Image
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1000&q=80"
+              alt="Refurbished circulair meubilair voor overheid"
+              fill
+              className="object-cover"
+            />
 
-              <div className="absolute top-6 right-6 pointer-events-none opacity-80 bg-black/20 backdrop-blur-sm px-3 py-1.5 rounded-lg">
-                <span className="text-white font-bold text-sm tracking-widest uppercase">JR-Interieur</span>
-              </div>
+            <div className="absolute top-6 right-6 pointer-events-none opacity-80">
+              <span className="text-white font-bold text-sm tracking-widest uppercase">JR-Interieur</span>
             </div>
           </div>
         </div>

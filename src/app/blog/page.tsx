@@ -44,7 +44,7 @@ export default function BlogPage() {
             <div className="mb-[60px] md:mb-[80px]">
               <Link href={`/blog/${blogPosts[0].slug}`} className="group block">
                 <article className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-                  <div className="relative aspect-[16/10] lg:aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-500 group-hover:shadow-[0_25px_60px_rgba(0,0,0,0.15)] group-hover:-translate-y-1">
+                  <div className="relative aspect-[16/10] lg:aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={blogPosts[0].image}
                       alt={blogPosts[0].title}
@@ -86,7 +86,7 @@ export default function BlogPage() {
               {blogPosts.slice(1).map((post, index) => (
                 <Link href={`/blog/${post.slug}`} key={post.slug} className="group">
                   <article className="flex flex-col h-full">
-                    <div className="relative aspect-[4/3] w-full mb-5 overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-500 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] group-hover:-translate-y-1">
+                    <div className="relative aspect-[4/3] w-full mb-5 overflow-hidden">
                       <Image
                         src={post.image}
                         alt={post.title}

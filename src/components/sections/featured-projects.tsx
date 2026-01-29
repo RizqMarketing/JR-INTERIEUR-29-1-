@@ -60,7 +60,7 @@ const FeaturedProjects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[30px]">
           {projects.map((project) => (
             <div key={project.id} className="group cursor-pointer">
-              <div className="relative aspect-[4/3] mb-[20px] overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-500 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.15)] group-hover:-translate-y-1">
+              <div className="relative aspect-[4/3] mb-[20px] overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}

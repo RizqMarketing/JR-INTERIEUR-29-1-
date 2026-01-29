@@ -8,14 +8,14 @@ const CollectionGrid = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-[130px]">
 
           <div className="w-full lg:w-[45%] flex justify-center">
-            <div className="relative w-full aspect-[4/3] max-w-[600px] bg-white overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.08)] transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.12)] hover:-translate-y-1">
+            <div className="relative w-full aspect-[4/3] max-w-[600px] bg-white">
                 <Image
                   src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
                   alt="Circulaire kantoorinrichting voor overheid"
-                  fill
-                  className="object-contain transition-transform duration-700 hover:scale-[1.02]"
-                  priority
-                />
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
           </div>
 
