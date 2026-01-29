@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building2, FileCheck, Recycle, UserCheck } from 'lucide-react';
+import { Building2, FileCheck, Recycle, UserCheck, ArrowRight } from 'lucide-react';
 
 const uspItems = [
   {
@@ -45,6 +45,24 @@ const UspBlocks: React.FC = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className="mt-[50px] md:mt-[70px] flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="/oplossingen"
+            className="group inline-flex items-center gap-4 bg-[#1a1a1a] px-8 py-5 text-[14px] font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-black"
+          >
+            Bekijk onze oplossingen
+            <ArrowRight className="h-4 w-5 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.5} />
+          </a>
+          <a
+            href="/contact"
+            className="group inline-flex items-center gap-4 bg-white border border-[#E0E0E0] px-8 py-5 text-[14px] font-bold uppercase tracking-wider text-[#1a1a1a] transition-all duration-300 hover:bg-[#f5f5f5]"
+          >
+            Neem contact op
+            <ArrowRight className="h-4 w-5 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.5} />
+          </a>
         </div>
       </div>
     </section>

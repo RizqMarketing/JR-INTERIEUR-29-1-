@@ -14,29 +14,29 @@ const steps = [
     number: "01",
     icon: <ClipboardList size={28} strokeWidth={1.5} />,
     title: "Inventarisatie",
-    description: "We brengen wensen, doelen en bestaande meubels in kaart. Zo krijgen we een helder beeld van de huidige situatie en de mogelijkheden voor hergebruik en verduurzaming.",
-    details: "We analyseren het huidige interieur, beoordelen de staat van bestaand meubilair en inventariseren welke items geschikt zijn voor hergebruik, refurbishing of herstoffering.",
+    description: "We brengen wensen, doelen en bestaande meubels in kaart.",
+    details: "Denk aan het beoordelen van bestaand meubilair en het verkennen van mogelijkheden voor hergebruik.",
   },
   {
     number: "02",
     icon: <PenTool size={28} strokeWidth={1.5} />,
     title: "Advies & ontwerp",
-    description: "Op basis van de inventarisatie maken we een praktisch ontwerp met focus op circulariteit. We adviseren over hergebruik, refurbishing en aanvulling met duurzame materialen.",
-    details: "Ons ontwerp sluit aan op de eisen van uw aanbesteding. We maken inzichtelijk welke circulaire maatregelen worden toegepast en wat dit oplevert aan duurzaamheidswinst.",
+    description: "Praktisch ontwerp met focus op circulariteit.",
+    details: "Afgestemd op uw wensen en de mogelijkheden binnen uw project.",
   },
   {
     number: "03",
     icon: <Wrench size={28} strokeWidth={1.5} />,
     title: "Refurbish & herstofferen",
-    description: "Uitvoering in eigen beheer of met vaste partners. Bestaand meubilair wordt vakkundig gerefurbished en herstoffeerd tot een technisch en visueel hoogwaardig niveau.",
-    details: "We werken uitsluitend met slijtvaste en duurzaam geproduceerde materialen. Elk meubel wordt grondig gecontroleerd en waar nodig voorzien van nieuwe onderdelen.",
+    description: "Uitvoering in eigen beheer of met vaste partners.",
+    details: "Afhankelijk van het project en de wensen.",
   },
   {
     number: "04",
     icon: <CheckSquare size={28} strokeWidth={1.5} />,
     title: "Realisatie",
-    description: "Montage, inrichting en oplevering. We zorgen voor een naadloze uitvoering en leveren het eindresultaat op volgens afspraak.",
-    details: "Na oplevering evalueren we het resultaat en zorgen we voor documentatie die u kunt gebruiken voor de verantwoording van circulaire maatregelen.",
+    description: "Montage, inrichting en oplevering.",
+    details: "In overleg plannen we de uitvoering.",
   },
 ];
 
@@ -114,7 +114,7 @@ export default function Werkwijze() {
                   KORTE LIJNEN, <span className="font-bold">HELDER RESULTAAT</span>
                 </h2>
                 <p className="text-[16px] leading-[1.7] text-[#555555] max-w-[600px]">
-                  Gedurende het hele traject bent u in contact met één vast aanspreekpunt. Wij houden u op de hoogte van de voortgang en stemmen tussentijds af waar nodig. Zo weet u altijd waar u aan toe bent.
+                  Wij houden u op de hoogte van de voortgang en stemmen tussentijds af waar nodig.
                 </p>
               </div>
               <div className="w-full lg:w-1/3 flex justify-center lg:justify-end">

@@ -59,10 +59,10 @@ export default function RefurbishedMeubilair() {
                 </h2>
                 <div className="space-y-6 text-[16px] leading-[1.7] text-[#555555]">
                   <p>
-                    Refurbished meubilair is bij uitstek geschikt voor aanbestedingen waarin hergebruik en levensduurverlenging worden gewaardeerd. Wij reviseren bestaand meubilair tot een technisch en visueel hoogwaardig niveau.
+                    Wij reviseren bestaand meubilair tot een technisch en visueel hoogwaardig niveau. Deze aanpak ondersteunt circulaire doelstellingen en levert aantoonbare duurzaamheidswinst op.
                   </p>
                   <p>
-                    Deze aanpak ondersteunt circulaire doelstellingen en levert aantoonbare duurzaamheidswinst op. Het resultaat is meubilair dat functioneel en visueel gelijkwaardig is aan nieuw, maar met een aanzienlijk kleinere ecologische voetafdruk.
+                    Het resultaat is meubilair dat functioneel en visueel gelijkwaardig is aan nieuw, maar met een aanzienlijk kleinere ecologische voetafdruk.
                   </p>
                 </div>
               </div>

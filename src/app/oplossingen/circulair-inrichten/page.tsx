@@ -62,7 +62,7 @@ export default function CirculairInrichten() {
                     Circulair inrichten vormt een belangrijk onderdeel van veel overheidsaanbestedingen. Wij vertalen circulaire beleidsdoelstellingen naar praktische en uitvoerbare interieuroplossingen.
                   </p>
                   <p>
-                    Van hergebruik van bestaand meubilair tot bewuste materiaalkeuzes: circulariteit wordt bij ons concreet toegepast. Wij zorgen ervoor dat uw circulaire ambities tastbaar worden in de werkomgeving.
+                    Van hergebruik van bestaand meubilair tot bewuste materiaalkeuzes: circulariteit wordt bij ons concreet toegepast.
                   </p>
                 </div>
               </div>

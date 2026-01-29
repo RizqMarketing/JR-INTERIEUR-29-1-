@@ -89,37 +89,51 @@ export default function DuurzaamHerstofferen() {
                 <h2 className="text-[28px] md:text-[40px] font-light leading-[1.1] uppercase tracking-[0.025em] text-black mb-8">
                   WAAROM <span className="font-bold">HERSTOFFEREN?</span>
                 </h2>
-                <ul className="space-y-4">
-                  {benefits.map((benefit, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <CheckCircle2 size={20} strokeWidth={1.5} className="text-[#6B8E7B] flex-shrink-0 mt-0.5" />
-                      <span className="text-[15px] leading-[1.5] text-[#333333]">{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="bg-white p-8 md:p-10">
+                  <ul className="space-y-4">
+                    {benefits.map((benefit, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <CheckCircle2 size={20} strokeWidth={1.5} className="text-[#6B8E7B] flex-shrink-0 mt-0.5" />
+                        <span className="text-[15px] leading-[1.5] text-[#333333]">{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
               <div className="w-full lg:w-1/2">
-                <div className="grid grid-cols-1 gap-[20px]">
-                  <div className="bg-white p-8">
-                    <div className="w-12 h-12 flex items-center justify-center bg-[#F1F1F1] mb-5">
-                      <Scissors size={24} strokeWidth={1.5} className="text-[#1a1a1a]" />
+                <div className="grid grid-cols-1 gap-[20px] h-full">
+                  <div className="bg-white p-8 flex flex-col justify-center">
+                    <div className="flex items-center gap-5">
+                      <div className="w-12 h-12 flex items-center justify-center bg-[#F1F1F1] flex-shrink-0">
+                        <Scissors size={24} strokeWidth={1.5} className="text-[#1a1a1a]" />
+                      </div>
+                      <div>
+                        <h3 className="text-[16px] font-bold uppercase tracking-[0.025em] text-black mb-1">Vakmanschap</h3>
+                        <p className="text-[14px] leading-[1.6] text-[#555555]">Uitvoering door ervaren stoffeerders.</p>
+                      </div>
                     </div>
-                    <h3 className="text-[16px] font-bold uppercase tracking-[0.025em] text-black mb-3">Vakmanschap</h3>
-                    <p className="text-[14px] leading-[1.6] text-[#555555]">Uitvoering door ervaren stoffeerders met oog voor detail en kwaliteit.</p>
                   </div>
-                  <div className="bg-white p-8">
-                    <div className="w-12 h-12 flex items-center justify-center bg-[#F1F1F1] mb-5">
-                      <Shield size={24} strokeWidth={1.5} className="text-[#1a1a1a]" />
+                  <div className="bg-white p-8 flex flex-col justify-center">
+                    <div className="flex items-center gap-5">
+                      <div className="w-12 h-12 flex items-center justify-center bg-[#F1F1F1] flex-shrink-0">
+                        <Shield size={24} strokeWidth={1.5} className="text-[#1a1a1a]" />
+                      </div>
+                      <div>
+                        <h3 className="text-[16px] font-bold uppercase tracking-[0.025em] text-black mb-1">Slijtvaste materialen</h3>
+                        <p className="text-[14px] leading-[1.6] text-[#555555]">Hoogwaardige, duurzame stoffen.</p>
+                      </div>
                     </div>
-                    <h3 className="text-[16px] font-bold uppercase tracking-[0.025em] text-black mb-3">Slijtvaste materialen</h3>
-                    <p className="text-[14px] leading-[1.6] text-[#555555]">Wij werken uitsluitend met hoogwaardige, duurzaam geproduceerde stoffen.</p>
                   </div>
-                  <div className="bg-white p-8">
-                    <div className="w-12 h-12 flex items-center justify-center bg-[#F1F1F1] mb-5">
-                      <Sparkles size={24} strokeWidth={1.5} className="text-[#1a1a1a]" />
+                  <div className="bg-white p-8 flex flex-col justify-center">
+                    <div className="flex items-center gap-5">
+                      <div className="w-12 h-12 flex items-center justify-center bg-[#F1F1F1] flex-shrink-0">
+                        <Sparkles size={24} strokeWidth={1.5} className="text-[#1a1a1a]" />
+                      </div>
+                      <div>
+                        <h3 className="text-[16px] font-bold uppercase tracking-[0.025em] text-black mb-1">Als nieuw</h3>
+                        <p className="text-[14px] leading-[1.6] text-[#555555]">Resultaat dat oogt en voelt als nieuw.</p>
+                      </div>
                     </div>
-                    <h3 className="text-[16px] font-bold uppercase tracking-[0.025em] text-black mb-3">Als nieuw</h3>
-                    <p className="text-[14px] leading-[1.6] text-[#555555]">Het eindresultaat oogt en voelt als nieuw, maar met een fractie van de ecologische impact.</p>
                   </div>
                 </div>
               </div>
