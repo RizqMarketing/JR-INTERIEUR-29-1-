@@ -23,14 +23,14 @@ const SolutionHighlights = () => {
             </a>
           </div>
           <div className="w-full md:w-1/2 order-1 md:order-2">
-            <div className="relative aspect-[4/3] w-full">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.15)] hover:-translate-y-1">
                 <Image
                   src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=800&q=80"
                   alt="Duurzame kantoorinrichting voor overheid"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+                  fill
+                  className="object-cover transition-transform duration-700 hover:scale-[1.02]"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
             </div>
           </div>
         </div>
@@ -38,14 +38,14 @@ const SolutionHighlights = () => {
         {/* DUURZAAM HERSTOFFEREN */}
         <div className="flex flex-col md:flex-row items-center py-[60px] md:py-[80px] gap-8 md:gap-16">
           <div className="w-full md:w-1/2">
-            <div className="relative aspect-[4/3] w-full">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.15)] hover:-translate-y-1">
                   <Image
                     src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80"
                     alt="Duurzaam herstofferen van meubilair"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+                    fill
+                    className="object-cover transition-transform duration-700 hover:scale-[1.02]"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
             </div>
           </div>
           <div className="w-full md:w-1/2">

@@ -46,15 +46,15 @@ export default function OverOns() {
           <div className="container mx-auto px-6 md:px-8 max-w-[1440px]">
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-[80px]">
               <div className="w-full lg:w-1/2">
-                <div className="relative aspect-[4/3] w-full overflow-hidden">
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.15)] hover:-translate-y-1">
                   <Image
                     src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
                     alt="JR-Interieur kantoor"
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-700 hover:scale-[1.02]"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
-                  <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-sm px-4 py-2">
+                  <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
                     <span className="text-[11px] font-bold text-white uppercase tracking-[0.2em]">JR-Interieur</span>
                   </div>
                 </div>

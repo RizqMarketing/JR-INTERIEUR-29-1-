@@ -114,7 +114,7 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Featured Image */}
         <section className="py-[40px] md:py-[60px] px-6 md:px-8 lg:px-16">
           <div className="max-w-[1200px] mx-auto">
-            <div className="relative aspect-[21/9] w-full overflow-hidden">
+            <div className="relative aspect-[21/9] w-full overflow-hidden rounded-2xl shadow-[0_25px_60px_rgba(0,0,0,0.12)]">
               <Image
                 src={post.image}
                 alt={post.title}
@@ -227,7 +227,7 @@ export default async function BlogPostPage({ params }: Props) {
               {relatedPosts.map((relatedPost) => (
                 <Link href={`/blog/${relatedPost.slug}`} key={relatedPost.slug} className="group">
                   <article className="flex flex-col">
-                    <div className="relative aspect-[4/3] w-full mb-5 overflow-hidden">
+                    <div className="relative aspect-[4/3] w-full mb-5 overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-500 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] group-hover:-translate-y-1">
                       <Image
                         src={relatedPost.image}
                         alt={relatedPost.title}

@@ -132,7 +132,7 @@ export default function WebshopPage() {
 
               {/* Decorative Visual */}
               <div className="relative">
-                <div className="relative aspect-[4/3] bg-white border border-[#E0E0E0] overflow-hidden">
+                <div className="relative aspect-[4/3] bg-white overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.12)]">
                   <Image
                     src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
                     alt="Moderne kantoorinrichting"
@@ -141,7 +141,7 @@ export default function WebshopPage() {
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                   {/* Overlay with text */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent rounded-2xl" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
                     <p className="text-[12px] font-bold uppercase tracking-wider text-white/70 mb-2">
                       Showroom
@@ -152,7 +152,7 @@ export default function WebshopPage() {
                   </div>
                 </div>
                 {/* Decorative element */}
-                <div className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-[#6B8E7B] -z-10 hidden md:block" />
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-[#6B8E7B] rounded-xl -z-10 hidden md:block" />
               </div>
             </div>
           </div>

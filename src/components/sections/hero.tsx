@@ -48,15 +48,17 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 relative min-h-[350px] lg:min-h-0">
+        <div className="w-full lg:w-1/2 relative min-h-[350px] lg:min-h-0 p-4 lg:p-8">
+          <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-[0_25px_50px_-12px_rgba(0,0,0,0.15)]">
             <Image
               src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1600&q=95"
               alt="Duurzame kantoorinrichting voor overheid en publieke organisaties"
-            fill
-            priority
-            style={{ objectFit: 'cover', objectPosition: 'center' }}
-            className="select-none"
-          />
+              fill
+              priority
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              className="select-none"
+            />
+          </div>
         </div>
       </div>
 

@@ -65,7 +65,7 @@ const HighlightedProducts = () => {
 
           {/* Right image with decorative elements */}
           <div className="w-full lg:w-1/2 relative">
-            <div className="relative aspect-[4/3] overflow-hidden">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-[0_25px_60px_rgba(0,0,0,0.4)]">
               {/* Main image */}
               <Image
                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1000&q=85"
@@ -75,16 +75,16 @@ const HighlightedProducts = () => {
               />
 
               {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/40 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/40 via-transparent to-transparent rounded-2xl" />
 
               {/* Corner accent */}
               <div className="absolute top-0 right-0 w-[100px] h-[100px]">
-                <div className="absolute top-0 right-0 w-full h-[1px] bg-white/30" />
-                <div className="absolute top-0 right-0 h-full w-[1px] bg-white/30" />
+                <div className="absolute top-6 right-0 w-[calc(100%-24px)] h-[1px] bg-white/30" />
+                <div className="absolute top-0 right-6 h-[calc(100%-24px)] w-[1px] bg-white/30" />
               </div>
 
               {/* Brand badge */}
-              <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-sm px-4 py-2">
+              <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
                 <span className="text-[11px] font-bold text-white uppercase tracking-[0.2em]">JR-Interieur</span>
               </div>
             </div>
